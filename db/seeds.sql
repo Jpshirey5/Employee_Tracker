@@ -10,5 +10,5 @@ VALUE ("CEO", 800000.00, 5),
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUE ("John", "Smith", 1, 3), 
 ("Julia", "McIntosh", 1, 1), 
-("David", "Spark", 3, 2), 
-("Rockwell", "Kingston", 5, 2), 
+("David", "Spark", 3, NULL), 
+("Rockwell", "Kingston", 5, NULL), 
