@@ -21,10 +21,35 @@ const db = mysql.createConnection(
   console.log(`Connected to the employee_db database.`)
 );
 
-// Query database
-db.query('SELECT * FROM students', function (err, results) {
-  console.log(results);
+// Getting Info from Database
+app.get("/departments", (req, res) => {
+  db.query("SELECT * FROM departments", (err, results) => {
+    if (err) 
+    res.status(500).send("Error receiving departments");
+    else 
+    res.json(results);
+  });
 });
+
+app.get("/roles", (req, res) => {
+  db.query(
+    "SELECT roles.*, departments.name AS department_name FROM roles INNER JOIN departments ON roles.department_id = departments.id",
+    (err, results) => {
+      if (err) 
+      res.status(500).send("Error receiving roles");
+      else 
+      res.json(results);
+    }
+  );
+});
+
+app.get("/employees", (req, res) => {
+      if (err) 
+      res.status(500).send("Error receiving employees");
+      else 
+      res.json(results);
+    }
+  );
 
 // Default response for any other request (Not Found)
 app.use((req, res) => {
@@ -34,3 +59,4 @@ app.use((req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+
