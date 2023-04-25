@@ -1,16 +1,17 @@
-INSERT INTO department (name)
-VALUES ("Engineering"), ("Finance"), ("Legal"), ("Sales"), ("Marketing");
+INSERT INTO department (name) VALUES ("Engineering");
+INSERT INTO department (name) VALUES ("Finance");
+INSERT INTO department (name) VALUES ("Legal");
+INSERT INTO department (name) VALUES ("Sales");
+INSERT INTO department (name) VALUES ("Marketing");
 
-INSERT INTO role (title, salary, department_id)
-VALUE ("CEO", 800000.00, 5), 
-("Senior Director", 600000.00, 4), 
-("Director", 500000.00, 2), 
-("Sales Representative", 400000.00, 3), 
-("Software Engineer", 300000.00, 1); 
+INSERT INTO role (title, salary, department_id) VALUES ("CEO", 800000.00, 5);
+INSERT INTO role (title, salary, department_id) VALUES("Senior Director", 600000.00, 4);
+INSERT INTO role (title, salary, department_id) VALUES("Director", 500000.00, 2);
+INSERT INTO role (title, salary, department_id) VALUES("Sales Representative", 400000.00, 3);
+INSERT INTO role (title, salary, department_id) VALUES("Software Engineer", 300000.00, 1);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUE ("John", "Smith", 1, 3), 
-("Julia", "McIntosh", 1, 1), 
-("Sam", "Jones", 1, 2), 
-("David", "Spark", 4, NULL), 
-("Rockwell", "Kingston", 5, NULL), 
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ("John", "Smith", 1, 2);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES ("Julia", "McIntosh", 1, 1);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES("Sam", "Jones", 3, 2);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES("David", "Spark", 4, 0);
+INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES("Rockwell", "Kingston", 5, 0);
