@@ -30,5 +30,8 @@ This project is licensed under the MIT license.
 If you have any questions, please contact me at jayshirey@gmail.com	 or visit my [GitHub profile](https://github.com/jpshirey5).
 
 ## Screenshot
+![](Assets/Screen%20Shot%202023-04-25%20at%208.26.25%20PM.png)
 
 ## Screen Recording Submission
+https://drive.google.com/file/d/1nfv0XwJAmgRNRVpU-x30_d-mstVZNtaK/view
+
